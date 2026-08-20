@@ -26,16 +26,6 @@ A responsive landing/catalog site with article and vehicle cards, fully keyboard
 └── Img/                # Images and icons
 ```
 
-## Running Locally
-
-No build step is required — just open `index.html` in a browser, or spin up a local server:
-
-```bash
-# e.g. via VS Code Live Server
-```
-
-Then open [http://localhost:3000](http://localhost:3000).
-
 ## Accessibility
 
 - Navigation is fully operable via keyboard.
