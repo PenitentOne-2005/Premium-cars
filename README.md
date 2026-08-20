@@ -10,7 +10,7 @@ A responsive landing/catalog site with article and vehicle cards, fully keyboard
 
 ## Features
 
-- **Responsive layout** — displays correctly on desktop, tablet, and mobile devices.
+- 📱 Responsive Layout — Adaptive design structured with modern CSS layout techniques (Flexbox & Grid), seamlessly adjusting to desktop, tablet, and mobile viewports.
 - **Keyboard accessibility** — all interactive elements (navigation, cards, search) are reachable via `Tab`/`Shift+Tab`, with visible `:focus` styles and a logical focus order.
 - **Semantic markup** — proper HTML tags and ARIA attributes are used where needed for correct screen reader support.
 - **Animations** — smooth transitions and effects (card appearance, hover states, etc.).
