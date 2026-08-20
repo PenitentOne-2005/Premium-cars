@@ -1,4 +1,4 @@
-# Premium Car
+# Premium Cars
 
 A responsive landing/catalog site with article and vehicle cards, fully keyboard-accessible and supporting `prefers-reduced-motion`.
 
