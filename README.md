@@ -1,52 +1,44 @@
-Premium Car
+# Premium Car
 
-A responsive landing/catalog site with article and vehicle cards, fully keyboard-accessible and supporting prefers-reduced-motion.
+A responsive landing/catalog site with article and vehicle cards, fully keyboard-accessible and supporting `prefers-reduced-motion`.
 
-Tech Stack
-HTML5
-CSS3 (Flexbox/Grid, media queries, CSS variables)
-Vanilla JavaScript (no frameworks)
-Features
-Responsive layout — displays correctly on desktop, tablet, and mobile devices.
-Keyboard accessibility — all interactive elements (navigation, cards, search) are reachable via Tab/Shift+Tab, with visible :focus styles and a logical focus order.
-Semantic markup — proper HTML tags and ARIA attributes are used where needed for correct screen reader support.
-Animations — smooth transitions and effects (card appearance, hover states, etc.).
-prefers-reduced-motion support — when the system's reduced-motion setting is enabled, animations are disabled/simplified so users sensitive to on-screen motion aren't affected.
+## Tech Stack
 
+- HTML5
+- CSS3 (Flexbox/Grid, media queries, CSS variables)
+- Vanilla JavaScript (no frameworks)
 
-Project Structure
+## Features
+
+- **Responsive layout** — displays correctly on desktop, tablet, and mobile devices.
+- **Keyboard accessibility** — all interactive elements (navigation, cards, search) are reachable via `Tab`/`Shift+Tab`, with visible `:focus` styles and a logical focus order.
+- **Semantic markup** — proper HTML tags and ARIA attributes are used where needed for correct screen reader support.
+- **Animations** — smooth transitions and effects (card appearance, hover states, etc.).
+- **`prefers-reduced-motion` support** — when the system's reduced-motion setting is enabled, animations are disabled/simplified so users sensitive to on-screen motion aren't affected.
+
+## Project Structure
+
+```
 ├── index.html          # Main page
 ├── Styles/             # Styles, including media queries and reduce-motion
 ├── js/
-│   └── app.js          # UI logic
+│   └── app.js          # UI logic (menu, cards, animations)
 └── Img/                # Images and icons
-Running Locally
+```
 
-No build step is required — just open index.html in a browser, or spin up a local server:
+## Running Locally
 
-bash
+No build step is required — just open `index.html` in a browser, or spin up a local server:
+
+```bash
 # e.g. via VS Code Live Server
+```
 
-Then open http://localhost:3000.
+Then open [http://localhost:3000](http://localhost:3000).
 
-Reduced Motion Support
+## Accessibility
 
-CSS uses the following media query:
-
-css
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-This ensures that when the system's reduced-motion setting is enabled, all animations and smooth transitions on the site are turned off.
-
-Accessibility
-Navigation is fully operable via keyboard.
-Visible :focus-visible styles are provided for interactive elements.
-Images include alt attributes.
-Proper heading hierarchy is maintained.
+- Navigation is fully operable via keyboard.
+- Visible `:focus-visible` styles are provided for interactive elements.
+- Images include `alt` attributes.
+- Proper heading hierarchy is maintained.
